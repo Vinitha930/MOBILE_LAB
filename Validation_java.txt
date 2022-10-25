@@ -1,0 +1,40 @@
+package com.example.validation;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+
+public class MainActivity extends AppCompatActivity {
+
+    EditText T1,T2,T3,T4,T5;
+    Button B1;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        T1 = (EditText) findViewById(R.id.T1);
+        T2 = (EditText) findViewById(R.id.T2);
+        T3 = (EditText) findViewById(R.id.T3);
+        T4 = (EditText) findViewById(R.id.T4);
+        T5 = (EditText) findViewById(R.id.T5);
+        B1 = (Button)findViewById(R.id.B1);
+        B1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+             String S1 = T1.getText().toString();
+             String S2 = T2.getText().toString();
+             int num = Integer.parseInt(S2);
+             String S3 = T3.getText().toString();
+             String S4 = T4.getText().toString();
+             String S5 = T5.getText().toString();
+
+
+
+            }
+        });
+    }
+}
+
