@@ -28,10 +28,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String s1 = e1.getText().toString();
                 String s2 = e2.getText().toString();
-                if (s1.equals("admin") && s2.equals("admin")) {
+                if (s1.equals("admin") && s2.equals("admin")) 
+                {
                     Toast.makeText(getApplicationContext(), "login successfull",Toast.LENGTH_SHORT).show();
                 }
-
+                else
+                {
+                Toast.makeText(getApplicationContext(), "invalid username or password",Toast.LENGTH_SHORT).show();  
+                }
             }
         });
 
